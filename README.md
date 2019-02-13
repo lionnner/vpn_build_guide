@@ -9,14 +9,15 @@
 * [CentOS/Debian/Ubuntu下 shadowsocks-R版一键安装脚本](https://shadowsocks.be/9.html)
 * [CentOS/Debian/Ubuntu下 shadowsocks-go版一键安装脚本](https://teddysun.com/392.html)
 
-####使用root用户登录，运行以下命令
+
+#### 使用root用户登录，运行以下命令
 ``
 wget --no-check-certificate -O shadowsocks-all.sh https://raw.githubusercontent.com/teddysun/shadowsocks_install/master/shadowsocks-all.sh
 chmod +x shadowsocks-all.sh
 ./shadowsocks-all.sh 2>&1 | tee shadowsocks-all.log
 ``
 
-####安装完成后，脚本提示如下
+#### 安装完成后，脚本提示如下
 
 Congratulations, your_shadowsocks_version install completed!
 Your Server IP        :your_server_ip
@@ -32,14 +33,14 @@ Your QR Code has been saved as a PNG file path:
 Welcome to visit:https://teddysun.com/486.html
 Enjoy it!
 
-####卸载方法
+#### 卸载方法
 
 若已安装多个版本，则卸载时也需多次运行（每次卸载一种）
 
 使用root用户登录，运行以下命令：
 
 ./shadowsocks-all.sh uninstall
-####启动脚本
+#### 启动脚本
 
 启动脚本后面的参数含义，从左至右依次为：启动，停止，重启，查看状态。
 
@@ -55,7 +56,7 @@ Shadowsocks-Go 版：
 Shadowsocks-libev 版：
 /etc/init.d/shadowsocks-libev start | stop | restart | status
 
-####各版本默认配置文件
+#### 各版本默认配置文件
 
 Shadowsocks-Python 版：
 /etc/shadowsocks-python/config.json
